@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.11.0** · [Changes](CHANGELOG.md) · [Releases](https://github.com/Radio32/Conducting-Performer-docs/releases)
+Current version: **1.11.0** · [Changes](CHANGELOG.md)
 
 ## The idea
 
@@ -91,7 +91,7 @@ to modulate it.
 
 ## Installing
 
-1. Download `UPDATE.DAT` from the [latest release](https://github.com/Radio32/Conducting-Performer-docs/releases).
+1. Get `UPDATE.DAT`, the firmware file. (Downloads are paused for now.)
 2. Copy it to the root of the module's SD card. The phrase libraries go in a `LIBRARY` folder next
    to it (`BASS.LIB`, `MELODY.LIB`, `DRUMS.LIB`, `PROGS.LIB`); without them the firmware runs, and
    the library pages say "NO LIBRARY ON SD CARD".
