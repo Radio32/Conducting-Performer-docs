@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.11.0** · [Changes](CHANGELOG.md)
+Current version: **1.12.0** · [Changes](CHANGELOG.md) · [Releases](https://github.com/Radio32/Conducting-Performer-docs/releases)
 
 ## The idea
 
@@ -69,7 +69,8 @@ The drums are a section of their own, next to the harmony:
 - **CAPTURE**: what a track played, its chances settled, into a pattern or a fill, with undo.
 - The **MOD matrix**: LFOs, envelopes, positions, CV inputs and outputs and MIDI, on the
   destinations of the selected track's role, the conductor, the song and the drum chain.
-- A MIDI controller map for the Novation Launch Control XL 3.
+- A MIDI controller map for the Novation Launch Control XL 3 (made in the Library Manager): transpose,
+  degree, sections, the playlist, the drum chain, track and drum mixes, the arp and the LFOs.
 - **Launchpad** (every model from the S and Mini Mk1 on): sections, patterns, fills, mutes and the
   playlist on the pads, drum patterns edited and browsed from the library.
 
@@ -91,7 +92,7 @@ to modulate it.
 
 ## Installing
 
-1. Get `UPDATE.DAT`, the firmware file. (Downloads are paused for now.)
+1. Download `UPDATE.DAT` from the [latest release](https://github.com/Radio32/Conducting-Performer-docs/releases).
 2. Copy it to the root of the module's SD card. The phrase libraries go in a `LIBRARY` folder next
    to it (`BASS.LIB`, `MELODY.LIB`, `DRUMS.LIB`, `PROGS.LIB`); without them the firmware runs, and
    the library pages say "NO LIBRARY ON SD CARD".
@@ -115,3 +116,7 @@ bootloader and framework it still uses; PER|FORMER is his eurorack sequencer. Th
 PER|FORMER firmware.
 
 Released under the MIT licence: see [LICENSE](LICENSE). The firmware's source code is not public.
+It uses libopencm3 and libusbhost (LGPL-3.0), FreeRTOS (GPL with the FreeRTOS exception), FatFs and
+stb: each release lists them in `THIRD-PARTY-NOTICES.txt` and has a **relink kit** with their
+source and the firmware's compiled code, so you can rebuild the firmware with your own versions of
+those libraries.

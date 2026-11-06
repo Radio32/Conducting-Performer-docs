@@ -1,5 +1,18 @@
 # Changelog
 
+## Conducting Performer 1.12.0 (6 November 2026)
+
+#### Improvements
+
+- **New controller map functions** (XL3.MAP, made on the Library Manager's Controller page):
+  - Conductor: TRANSPOSE (−24…+24) and DEGREE (Auto, I–VII).
+  - Song: a section A–P next, the next section, the section playlist play / stop.
+  - Tracks: all tracks on; an arp track's mode, octaves and gate.
+  - Drums: a drum chain entry (the chain plays from it, starting if it was off).
+- Saved maps work as before. The Library Manager's suggested layout puts transpose, degree, colour,
+  jump, drum density, drum fill, swing and tempo on encoder row 1, the next section on PAGE ▲, the
+  drum chain's next entry on PAGE ▼ and the playlist on FN2.
+
 ## Conducting Performer 1.11.0 (6 November 2026)
 
 #### Improvements
