@@ -162,11 +162,29 @@ Each of the eight tracks has a role (PAGE + T2: F1 ROLES, F2 OUTPUTS, F5 COMMIT)
 | Drum Kit | MIDI Channel, MIDI Out, Length, Speed, Density, Magnet, Velocity, Accent, a note per voice |
 | Mod | Source, Level, Offset, Slew |
 
-SWING (ALL) on arp, bass, melody and free is one shared swing; the drums have their own, set on T3 SETUP. FOLLOW on bass: Chord tones counts the chord's notes (root, third, fifth); Bass note plays them over the bass as played. On melody and free, Bass note plays the chord's scale from the bass note. Spread (Off, 1–8) moves every note away from the chord's centre note: its distance in steps (arp, bass: the chord's notes; melody, free: the chord's scale) times 1 + spread; outside C1–B5 a note wraps round five octaves. It is a MOD destination (PITCH and ARP 2).
+SWING (ALL) on arp, bass, melody and free is one shared swing; the drums have their own, set on T3 SETUP. FOLLOW on bass: Chord tones counts the chord's notes (root, third, fifth); Bass note plays them over the bass as played. On melody and free, Bass note plays the chord's scale from the bass note. With a DEGREE set (T4 SETUP, PERF page 2), a bass on Chord tones walks that degree's scale instead (notes 0, 1, 2, 3: root, 2nd, 3rd, 4th). Spread (Off, 1–8) moves every note away from the chord's centre note: its distance in steps (arp, bass: the chord's notes; melody, free: the chord's scale) times 1 + spread; outside C1–B5 a note wraps round five octaves. It is a MOD destination (PITCH and ARP 2).
 
 ## Drums
 
-One drum store, the kit: 16 patterns + 8 fills, eight voices each (BD SNR CLP CHH OHH P1 P2 CYM). The Drum Kit track plays all voices over MIDI; the drum machine (role Drums + Lanes) plays a voice per track on CV and gate. Both play the same kit patterns.
+The drums are a section of their own: one kit of patterns that every drum track plays, a mixer, a chain that arranges them, fills to play live, and their own lane in the song. Two ways out: MIDI (the Drum Kit track) or CV and gate (the drum machine).
+
+**The drum section at a glance**
+
+| Part | What it is | Where |
+| --- | --- | --- |
+| The kit | 16 patterns + 8 fills, eight voices each (BD SNR CLP CHH OHH P1 P2 CYM), up to 4 bars, with accents and a chance per step | S1 STEPS on a drum track; the Library Manager's Patterns page |
+| Drum Kit track | All eight voices over MIDI (a note per voice, velocity and accent velocity); pattern N plays kit N on the Performer Drums plug-in for the disting NT | PAGE + T2: role Drum Kit |
+| Drum machine | A voice per track on CV and gate (Drums and Lane tracks); the CV carries the accent | PAGE + T2: roles Drums and Lane |
+| The mixer | Each voice's SLOT (the playing pattern, or another pattern's lane as a variation), CHANCE and mute; drum swing | T3 DRUMS (F5 SETUP: swing, length, speed, accent) |
+| Drum chain | The arrangement: entries of pattern + bars, with MORPH crossfades into the next entry | PAGE + T4 DRUM CHAIN |
+| Fills | Eight fills: from the library, captured, or made from the playing pattern (ROLL, TOMS, BUILD, BREAK, HITS), each with its chance | PAGE + S4 FILLS; played on PERF (page 1 on a drum track, page 2 on any) |
+| In the song | A section's DRUMS (a pattern while it plays), or the playlist's drum lane (drum chain entries with repeats) | PAGE + PATT SECTIONS; T6 PLAYLIST |
+| Capture | What the drums played, as heard, into a kit pattern or a fill (with undo) | PERF F4 CAPTURE; S4 FILLS F2 |
+| Library | Drum patterns by style: into a kit pattern, a chain entry or a fill; an edited pattern saved back | S1 F5 SAVE; T4 PATTERN; S4 |
+| Modulation | Voice chance, each kit voice's chance, drum density and fill, morph | MOD: DRUMS, KIT 1–2, DRUM CHAIN |
+| Launchpad | The drums' pattern edited on the pads (4 lanes × 16 steps), the library browsed, fills held | DRUMS and BROWSE views |
+
+The rest of this section is the controls, page by page.
 
 **S1 STEPS on a drum track:** F1 GATE (gate, probability), F2 ACCENT, F3 MUTE the voice, F4 VOICE, F5 SAVE (the edited pattern over the library pattern it came from). Turning with no step held picks the voice.
 
@@ -199,7 +217,7 @@ Jumps to another entry (Next Entry, matrix, controller) happen at the LAUNCH tim
 
 ## Perform (PERF)
 
-Tap PERF for page 1, tap again for page 2, tap again to go back. On page 1, T1–T8 select the track the tools act on, and S9–S16 mute T1–T8 (SHIFT: solo). Held tools let go when you leave the page; LATCH stays on. Page 2 is the song: F1 TRANSPOSE and F2 DEGREE pick what the encoder turns.
+Tap PERF for page 1, tap again for page 2, tap again to go back. Page 1 is the selected track (its number and role in the header): T1–T8 select the track the tools act on, and S9–S16 mute T1–T8 (SHIFT: solo). Held tools let go when you leave the page; LATCH stays on. Page 2 is the song: F1 TRANSPOSE and F2 DEGREE pick what the encoder turns.
 
 **Page 1, S1–S8: the selected track's tools**
 
