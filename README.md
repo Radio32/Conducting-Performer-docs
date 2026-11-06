@@ -89,8 +89,6 @@ the chain), and S5 SECTIONS, S6 PLAYLIST, S7 TUNE, S8 MONITOR. **PATT** opens th
 (on T1: the progression patterns); **PERF** the performance page. Hold PERF and click a parameter
 to modulate it.
 
-Every page, key and setting is in the **[Quick Reference](docs/QUICK-REFERENCE.md)**.
-
 ## Installing
 
 1. Download `UPDATE.DAT` from the [latest release](https://github.com/Radio32/Conducting-Performer-docs/releases).
