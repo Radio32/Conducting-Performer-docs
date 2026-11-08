@@ -1,5 +1,15 @@
 # Changelog
 
+## Conducting Performer 1.14.2 (8 November 2026)
+
+#### Changes
+
+- **Mutes and solo are on PERF page 1 only:** S9–S16 mute T1–T8, SHIFT + S9–S16 solo. Page 2's
+  SHIFT + T1–T8 mutes (and its MUTE row) are gone: T1–T8 only select there.
+- **A tap latches, a hold is temporary.** A mute or solo happens on the press. Released within
+  300 ms it stays; held 300 ms or more it is undone on release (a muted track held plays while held).
+  The soloed track's SHIFT + S key again ends the solo: the mutes go back to how they were before it.
+
 ## Conducting Performer 1.14.1 (8 November 2026)
 
 #### Fixes
