@@ -1,5 +1,12 @@
 # Changelog
 
+## Conducting Performer 1.14.1 (8 November 2026)
+
+#### Fixes
+
+- **PERF stays on its page when another track (or pattern) is selected.** Page 2 jumped back to
+  page 1, and held fills, repeats and tools were let go.
+
 ## Conducting Performer 1.14.0 (8 November 2026)
 
 #### Improvements
