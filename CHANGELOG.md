@@ -1,5 +1,14 @@
 # Changelog
 
+## Conducting Performer 1.14.0 (8 November 2026)
+
+#### Improvements
+
+- **PERF page 2: T1–T8 select the track again** (as on every page); **SHIFT + T1–T8 mute**. While
+  SHIFT is held the page shows a MUTE row (the muted tracks inverted), the header says
+  "SHIFT + T1-T8: MUTE" and the track LEDs show the mutes. Solo is on page 1 (SHIFT + S9–S16).
+- The SHIFT hints on both PERF pages take the header's place instead of running into it.
+
 ## Conducting Performer 1.13.0 (8 November 2026)
 
 #### Improvements
