@@ -1,5 +1,16 @@
 # Changelog
 
+## Conducting Performer 1.13.0 (8 November 2026)
+
+#### Improvements
+
+- **PERF page 1 is laid out like page 2:** TOOLS (S1–S8; a drum track: FILL 1–8, the held fill's
+  name) and TRACKS 1–8 on the same columns, the selected track inverted, the muted ones grey. The
+  header shows the track, its role and its playing pattern.
+- **F5 CHAIN on page 1:** a bass, melody or free track's pattern chain on / off; on a drum track the
+  drum chain. Lit while it plays; with no chain entries yet it says so. (F5 no longer opens page 2:
+  tapping PERF does.)
+
 ## Conducting Performer 1.12.0 (6 November 2026)
 
 #### Improvements

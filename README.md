@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.12.0** · [Changes](CHANGELOG.md) · [Releases](https://github.com/Radio32/Conducting-Performer-docs/releases)
+Current version: **1.13.0** · [Changes](CHANGELOG.md) · [Releases](https://github.com/Radio32/Conducting-Performer-docs/releases)
 
 ## The idea
 
@@ -64,7 +64,7 @@ The drums are a section of their own, next to the harmony:
 
 **Performing and modulating**
 - The **PERF** page: page 1 the selected track's tools by its role (punch, octave, rate, spread,
-  latch, thin, fill in, reverse, fills), page 2 the song (fills, beat repeat, TRANSPOSE and DEGREE on
+  latch, thin, fill in, reverse, fills) and its chain on F5, page 2 the song (fills, beat repeat, TRANSPOSE and DEGREE on
   the encoder), mutes and solos on both.
 - **CAPTURE**: what a track played, its chances settled, into a pattern or a fill, with undo.
 - The **MOD matrix**: LFOs, envelopes, positions, CV inputs and outputs and MIDI, on the
