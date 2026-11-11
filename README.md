@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.14.2** · [Changes](CHANGELOG.md) · [Releases](https://github.com/Radio32/Conducting-Performer-docs/releases)
+Current version: **1.14.2**
 
 ## The idea
 
