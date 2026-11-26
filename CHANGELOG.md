@@ -1,5 +1,22 @@
 # Changelog
 
+## Conducting Performer 1.15.0 (26 November 2026)
+
+#### Improvements
+
+- **CLOCK and FEEL replace Speed (and the arp's Rate)** on arp, bass, melody and free tracks. CLOCK is
+  the track's step as a ratio of 1/16: ×4 ×2 ×1 /2 /4 /8 /16 /32; FEEL makes it straight, triplet or
+  dotted. They belong to the track, so every pattern and the chain play at the same clock.
+  - On **S2** (two rows), and live on **PERF page 2: F3 CLOCK** (turn: the clock, SHIFT + turn: the
+    feel), shown above its F-key next to TRANSPOSE and DEGREE.
+  - A change waits for the **launch timing** (LAUNCH NOW, or stopped: at once); a pending one shows
+    as "x1 > /2".
+  - The arp's **CLK/2** and **CLKx2** on PERF page 1 (held) halve or double its clock.
+  - The arp setup's Rate row is gone. A MOD route on Speed or the arp's rate still sets the step.
+  - The drums keep their Speed (T3 SETUP, S2).
+- **Older projects:** each track takes the clock and feel of its first pattern's speed (an arp: its
+  rate). Patterns that had other speeds now play at the track's clock.
+
 ## Conducting Performer 1.14.2 (8 November 2026)
 
 #### Changes

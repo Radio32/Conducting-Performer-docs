@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.14.2**
+Current version: **1.15.0**
 
 ## The idea
 
@@ -31,11 +31,13 @@ whole piece, live.
   modulation).
 
 **Tracks by role**
-- **Arp:** an arpeggiator on the conductor's chord: mode, octaves, rate, gate (to legato), pattern,
+- **Arp:** an arpeggiator on the conductor's chord: mode, octaves, gate (to legato), pattern,
   steps, chance.
 - **Bass, Melody, Free:** step patterns that follow the chords (chord scale, home key, chord tones,
   the played bass note, or off), with spread, density and magnet, and a **pattern chain** of up to
   16 entries.
+- **Clock and feel** (arp, bass, melody, free): each track's step as a ratio of 1/16, ×4 ×2 ×1 /2 /4
+  /8 /16 /32, and straight, triplet or dotted; changed at the launch timing, from S2 or live on PERF.
 - **Drums, Lane, Drum Kit:** the drum section (below).
 - **Mod:** an LFO, envelope, the progression or section position, or a CV input, on a CV output.
 
@@ -63,9 +65,9 @@ The drums are a section of their own, next to the harmony:
   into patterns, chains and the conductor; edited patterns saved back.
 
 **Performing and modulating**
-- The **PERF** page: page 1 the selected track's tools by its role (punch, octave, rate, spread,
-  latch, thin, fill in, reverse, fills) and its chain on F5, page 2 the song (fills, beat repeat, TRANSPOSE and DEGREE on
-  the encoder); mutes and solo on page 1's S9–S16 (a tap latches, a hold is only while held).
+- The **PERF** page: page 1 the selected track's tools by its role (punch, octave, clock, spread,
+  latch, thin, fill in, reverse, fills) and its chain on F5, page 2 the song (fills, beat repeat;
+  TRANSPOSE, DEGREE and the track's CLOCK on the encoder); mutes and solo on page 1's S9–S16 (a tap latches, a hold is only while held).
 - **CAPTURE**: what a track played, its chances settled, into a pattern or a fill, with undo.
 - The **MOD matrix**: LFOs, envelopes, positions, CV inputs and outputs and MIDI, on the
   destinations of the selected track's role, the conductor, the song and the drum chain.
