@@ -1,5 +1,12 @@
 # Changelog
 
+## Conducting Performer 1.15.1 (26 November 2026)
+
+#### Changes
+
+- **PAGE + S4 FILLS: S1–S8 pick a fill and play it while held**, as on the PERF page (a quick tap
+  picks it for editing). F1 PLAY is gone.
+
 ## Conducting Performer 1.15.0 (26 November 2026)
 
 #### Improvements

@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.15.0**
+Current version: **1.15.1**
 
 ## The idea
 
