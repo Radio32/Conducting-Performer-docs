@@ -2,8 +2,8 @@
 
 ## Conducting Performer 1.18.2 beta (28 November 2026)
 
-**A beta: a new menu tree.** Try it and tell us how it feels; 1.15.1 stays the stable release.
-Projects from 1.15.1 load as they are (only the menus changed).
+**A beta: a new menu tree.** Try it and tell us how it feels. Projects from 1.15.1 load as they
+are (only the menus changed).
 
 #### The menu tree
 

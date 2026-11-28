@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.15.1** · beta: **1.18.2** (a new menu tree)
+Current version: **1.18.2 beta**
 
 ## The idea
 
@@ -27,7 +27,7 @@ whole piece, live.
 - Key, chord colour (triads to ninths), chord jump and voicing, by hand or by modulation;
   progressions from the library, loaded from any chord.
 - **Transpose** the whole progression, and a master **degree**: every chord heard as degree I–VII of
-  a key, the tracks on that degree's mode (T4 SETUP, PERF page 2's F1 / F2 and the encoder, or by
+  a key, the tracks on that degree's mode (T1 SETUP, PERF page 2's F1 / F2 and the encoder, or by
   modulation).
 
 **Tracks by role**
@@ -37,20 +37,20 @@ whole piece, live.
   the played bass note, or off), with spread, density and magnet, and a **pattern chain** of up to
   16 entries.
 - **Clock and feel** (arp, bass, melody, free): each track's step as a ratio of 1/16, ×4 ×2 ×1 /2 /4
-  /8 /16 /32, and straight, triplet or dotted; changed at the launch timing, from S2 or live on PERF.
-- **Drums, Lane, Drum Kit:** the drum section (below).
+  /8 /16 /32, and straight, triplet or dotted; changed at the launch timing, from T2 SETTINGS or live on PERF.
+- **Drums, Lane, Drum MIDI:** the drum section (below).
 - **Mod:** an LFO, envelope, the progression or section position, or a CV input, on a CV output.
 
 **The drums**
 
 The drums are a section of their own, next to the harmony:
 - **One kit, two outputs.** 16 patterns and 8 fills of eight voices (BD SNR CLP CHH OHH P1 P2 CYM),
-  with accents and a chance per step. The **Drum Kit** track plays all of them over MIDI (pattern N
+  with accents and a chance per step. The **Drum MIDI** track plays all of them over MIDI (pattern N
   plays kit N on the Performer Drums plug-in for the disting NT); the **drum machine** (Drums and
   Lane tracks) plays a voice per track on CV and gate.
-- **A mixer** (T3 DRUMS): each voice's slot (the playing pattern, or another pattern's lane as a
+- **A mixer** (T3 VOICE S4 on a drum track): each voice's slot (the playing pattern, or another pattern's lane as a
   variation), chance and mute; the drums have their own swing.
-- **The drum chain** (T4): an arrangement of patterns and bars, with **morphs** that crossfade one
+- **The drum chain** (T3 VOICE S1 on a drum track): an arrangement of patterns and bars, with **morphs** that crossfade one
   entry into the next.
 - **Fills:** eight of them, from the library, captured from what played, or made from the playing
   pattern (ROLL, TOMS, BUILD, BREAK, HITS), each with its own chance; held on the PERF page.
@@ -78,22 +78,23 @@ The drums are a section of their own, next to the harmony:
 
 ## The pages
 
-Hold **PAGE** to see the map. The track keys open the main pages:
+Hold **PAGE**: the track keys pick a mode, the step keys a module in it (each mode remembers its
+last one). Hold PAGE a second to see the map.
 
-| Key | Page | | Key | Page |
-|---|---|---|---|---|
-| T1 | CONDUCT: the progression | | T5 | MOD: the matrix |
-| T2 | TRACKS: roles and outputs | | T6 | PLAYLIST: the section playlist |
-| T3 | DRUMS: the kit | | T7 | PROJECT: load, save, tempo |
-| T4 | DRMCHAIN: the drum chain | | T8 | SYSTEM: calibration, MIDI, update |
+| Key | Mode | PAGE + S |
+|---|---|---|
+| T1 | HARMONY | Chords, Pads, Prog patterns, Prog library, Setup |
+| T2 | TRACK | Tracks (roles, outputs), Settings |
+| T3 | VOICE | the selected track's pages, by its role |
+| T4 | MOD | LFOs, Envelopes, CV out, CV in, Matrix, Track mod |
+| T5 | SONG | Playlist, Sections |
+| T7 | PROJECT | Project, Clock |
+| T8 | SYSTEM | Tune, Monitor, System (S8) |
 
-The step keys open the selected track's pages: S1 STEPS, S2 SETTINGS, S3 LIBRARY, S4 FILLS (or
-the chain), and S5 SECTIONS, S6 PLAYLIST, S7 TUNE, S8 MONITOR. **PATT** opens the track's chain
-(on T1: the progression patterns); **PERF** the performance page. Hold PERF and click a parameter
-to modulate it.
-
-The **1.18.2 beta** has a new menu tree (PAGE + T picks a mode, PAGE + S a module in it; T3 follows
-the selected track's role): see the [changelog](CHANGELOG.md).
+**T3 VOICE** follows the selected track's role: Sequence (or the arp's setup, the mod source),
+Chain, Library (bass, melody); on drum tracks the drum chain, the sequence, the mixer, fills and
+the drum setup. **PATT** opens the track's chain (on T1: the progression patterns); **PERF** the
+performance page. Hold PERF and click a parameter to modulate it.
 
 ## Installing
 
