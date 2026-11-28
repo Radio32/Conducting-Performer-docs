@@ -4,7 +4,7 @@
 progression; every track follows it in its own role: arpeggio, bass, melody, drums or modulation.
 Change a chord and the whole band moves with it.
 
-Current version: **1.15.1**
+Current version: **1.15.1** · beta: **1.18.2** (a new menu tree)
 
 ## The idea
 
@@ -91,6 +91,9 @@ The step keys open the selected track's pages: S1 STEPS, S2 SETTINGS, S3 LIBRARY
 the chain), and S5 SECTIONS, S6 PLAYLIST, S7 TUNE, S8 MONITOR. **PATT** opens the track's chain
 (on T1: the progression patterns); **PERF** the performance page. Hold PERF and click a parameter
 to modulate it.
+
+The **1.18.2 beta** has a new menu tree (PAGE + T picks a mode, PAGE + S a module in it; T3 follows
+the selected track's role): see the [changelog](CHANGELOG.md).
 
 ## Installing
 

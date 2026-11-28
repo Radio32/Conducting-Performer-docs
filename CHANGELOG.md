@@ -1,5 +1,67 @@
 # Changelog
 
+## Conducting Performer 1.18.2 beta (28 November 2026)
+
+**A beta: a new menu tree.** Try it and tell us how it feels; 1.15.1 stays the stable release.
+Projects from 1.15.1 load as they are (only the menus changed).
+
+#### The menu tree
+
+- **Hold PAGE: T1–T8 pick a mode, S1–S16 a module in it.** Each mode remembers its last module. Hold
+  PAGE a second to see the map; while PAGE is held the T keys light the modes (red: the open one) and
+  the S keys the open mode's modules. PREV, CLOCK, PATT and PERF work as before.
+
+  | Key | Mode | PAGE + S |
+  |---|---|---|
+  | T1 | HARMONY | S1 Chords, S2 Pads, S3 Prog patterns, S4 Prog library, S5 Setup |
+  | T2 | TRACK | S1 Tracks (roles, outputs), S2 Settings |
+  | T3 | VOICE | the selected track's pages, by its role (below) |
+  | T4 | MOD | S1 LFOs, S2 Envelopes, S3 CV out, S4 CV in, S5 Matrix, S6 Track mod |
+  | T5 | SONG | S1 Playlist, S2 Sections |
+  | T7 | PROJECT | S1 Project, S3 Clock (S4 Load/save and S5 Controllers: not built yet) |
+  | T8 | SYSTEM | S1 Tune, S3 Monitor, S8 System (CAL, MIDI, UTILS, UPDATE on its F-keys) |
+
+  T6 is free for now.
+- **T3 VOICE follows the selected track's role.** Each role has its own S keys and remembers its module:
+  - Free: S1 Sequence, S2 Chain
+  - Arp: S1 Arp setup, S2 Chain
+  - Bass, Melody: S1 Sequence, S2 Chain, S3 Library
+  - Drum (the drum machine and its lanes): S1 Drum chain, S2 Sequence, S4 Mixer, S5 Fills, S6 Drum setup
+  - Drum MIDI: as Drum, and S7 Kit MIDI
+  - Mod: S1 Mod source
+
+  Selecting another track (T1–T8) swaps the S keys to its role; the same module stays open when the
+  new role has it (LIBRARY stays LIBRARY from bass to melody). PAGE + T3 no longer jumps to the drum
+  track: select it first.
+
+#### Changes
+
+- **The Drum Kit role is called DRUM MIDI** (a whole kit on one track, over MIDI).
+- **The sequence page (melodic tracks):** F4 BROWSE, F5 SAVE; SHIFT + F1–F4 INIT, COPY, PASTE, DUPL
+  (they left the SHIFT + PAGE menu).
+- **The playlist:** F1–F5 ADD, REMOVE, INSERT, DUPL, CLEAR (the selected lane); SHIFT + F1 PLAY/STOP,
+  F2 END: LOOP/STOP, F4 MAIN (the main progression after this section), F5 PLAY ROW.
+- **Sections:** F1 DRUMS LOCK/FREE (the playlist's drum rows locked to its chord rows); MAIN moved to
+  the playlist.
+- **The drum mixer:** F3 ALL FOLLOW.
+- **The MOD matrix:** SHIFT + F4 ALL ROUTES is gone.
+
+#### Improvements
+
+- **SAVE NEW for drum patterns:** SHIFT + F5 on a drum track's sequence page adds the kit pattern to
+  the drum library as a new pattern ("USER 121"), with the tempo, key and swing of the pattern it came
+  from; the pattern and its drum chain entry then come from it. F5 SAVE still saves over the pattern it
+  came from. A pattern written from scratch can now be saved too.
+- **The drum chain follows PROJECT > Launch:** a pattern browsed while playing comes in at the launch
+  timing ("NEXT 012" blinks on the entry until then); stopped, or Launch Now: at once.
+
+#### Fixes
+
+- **No SD card:** browsing the drum chain, the pattern chain, fills or LIBRARY, and the library saves,
+  no longer hang on LOADING without a card. NO SD CARD shows for two seconds and the slot keeps its
+  pattern; a card that does not answer (just taken out, a faulty card or reader): SD CARD ERROR.
+- **Drum MIDI track settings:** the info line shows "(MIDI OUT OFF)" whole again.
+
 ## Conducting Performer 1.15.1 (26 November 2026)
 
 #### Changes
